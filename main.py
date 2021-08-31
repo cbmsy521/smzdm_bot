@@ -34,7 +34,7 @@ class SMZDM_Bot(object):
         cookie 为浏览器复制来的字符串
         :param cookie: 登录过的社区网站 cookie
         """
-        self.session.headers['Cookie'] = cookies    
+        self.session.headers['Cookie'].encode('utf-8') = cookies    
 
     def checkin(self):
         """
